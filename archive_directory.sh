@@ -7,7 +7,7 @@ if [ ! -d "$dir" ]; then
     exit 1
 fi
 
-current_date=$(date)
+current_date=$(date +"%Y-%m-%d")
 
 archive_name="$(basename "$dir")_$current_date.tar.gz"
 
